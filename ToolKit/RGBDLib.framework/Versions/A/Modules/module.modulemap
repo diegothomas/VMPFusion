@@ -1,0 +1,11 @@
+framework module RGBDLib {
+  umbrella header "RGBDLib.h"
+
+  export *
+  module * { export * }
+}
+
+module RGBDLib.Swift {
+    header "RGBDLib-Swift.h"
+    requires objc
+}
