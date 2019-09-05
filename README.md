@@ -12,16 +12,33 @@ INSTALL Instructions
 
 Prerequis:
 (1) Mac OS Mojave+
+
 (2) XCode
 
 (A) Download the repository
 
 (B) Open ToolKit.xcodeproj with XCode
 
-(C) Import the RGBDLib.framework into the project's Frameworks group (drag and drop)
+(C) Add a new scheme: ToolKit>MyMAc
 
-(D) Add a new scheme: ToolKit>MyMAc
+(D) Import the RGBDLib.framework into the project's Frameworks group (drag and drop)
 
-(E) Build and Run
+(E) In the target's General tab, add RGBDLib.framework in the Embedded Binaries field
+
+(F) Build and Run
+
+
+RUNNING instructions
+Go to File -> Open stream -> Offline 
+
+Search for the directory that contain the data (example one data from TUM dataset)
+
+TUM dataset: http://vision.in.tum.de/data/datasets/rgbd-dataset
+
+Click choose
+
+Then go to Tools -> Static reconstruction -> KFMap
+
+Then click the Start button
 
 
