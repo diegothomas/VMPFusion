@@ -44,9 +44,9 @@ struct Uniforms{
     packed_float4 flag;
 };
 
-float dot(float3 a, float3 b) {
+/*float dot(float3 a, float3 b) {
     return a.x*b.x + a.y*b.y + a.z*b.z;
-}
+}*/
 
 vertex VertexOut basic_vertex( const device packed_float3* vertex_array [[ buffer(0) ]],
                               const device packed_float3* nmle_array [[ buffer(1) ]],

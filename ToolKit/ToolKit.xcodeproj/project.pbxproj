@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22181F66234330C500874CB8 /* RGBDLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22181F64234330AC00874CB8 /* RGBDLib.framework */; };
+		22181F67234330C500874CB8 /* RGBDLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22181F64234330AC00874CB8 /* RGBDLib.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		222F529521FAF36700B3B953 /* DisparityMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F529421FAF36700B3B953 /* DisparityMetalView.swift */; };
 		222F529721FAF5B100B3B953 /* DisparityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F529621FAF5B100B3B953 /* DisparityViewController.swift */; };
-		227571B820E482E900428441 /* PassThrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = 227571B720E482E900428441 /* PassThrough.metal */; };
 		227571BE20E4D07500428441 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227571BD20E4D07500428441 /* SplitViewController.swift */; };
+		227F83A523432DB100BB2072 /* PassThrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = 227F83A423432DB100BB2072 /* PassThrough.metal */; };
 		22904D3421AF8DBB00CE21C0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D3321AF8DBB00CE21C0 /* ARViewController.swift */; };
 		22904D3C21AFC34D00CE21C0 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D3B21AFC34D00CE21C0 /* SceneViewController.swift */; };
 		229BE1ED21007EBA00ED1AEB /* MeshShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 229BE1EC21007EBA00ED1AEB /* MeshShader.metal */; };
@@ -24,9 +26,6 @@
 		22A0BA2D20D393600022AB25 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0BA2C20D393600022AB25 /* InputController.swift */; };
 		22A0BA3120D394220022AB25 /* OutputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0BA3020D394220022AB25 /* OutputController.swift */; };
 		22A0BA3320D394770022AB25 /* OutputMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0BA3220D394770022AB25 /* OutputMetalView.swift */; };
-		22EBE9A423209E84000A1A11 /* RGBDLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EBE9A323209E84000A1A11 /* RGBDLib.framework */; };
-		22EBE9A523209EDE000A1A11 /* RGBDLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22EBE9A323209E84000A1A11 /* RGBDLib.framework */; };
-		22EBE9A623209EDE000A1A11 /* RGBDLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22EBE9A323209E84000A1A11 /* RGBDLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,13 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		22532D7A2320980E004F616B /* Embed Frameworks */ = {
+		227F83AD23432DDF00BB2072 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				22EBE9A623209EDE000A1A11 /* RGBDLib.framework in Embed Frameworks */,
+				22181F67234330C500874CB8 /* RGBDLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,10 +60,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		22181F64234330AC00874CB8 /* RGBDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RGBDLib.framework; sourceTree = "<group>"; };
 		222F529421FAF36700B3B953 /* DisparityMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisparityMetalView.swift; sourceTree = "<group>"; };
 		222F529621FAF5B100B3B953 /* DisparityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisparityViewController.swift; sourceTree = "<group>"; };
-		227571B720E482E900428441 /* PassThrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; name = PassThrough.metal; path = ../../../RGBDLib/RGBDLib/Shaders/PassThrough.metal; sourceTree = "<group>"; };
 		227571BD20E4D07500428441 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		227F83A423432DB100BB2072 /* PassThrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PassThrough.metal; sourceTree = "<group>"; };
 		22904D3321AF8DBB00CE21C0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		22904D3B21AFC34D00CE21C0 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		229BE1EC21007EBA00ED1AEB /* MeshShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MeshShader.metal; sourceTree = "<group>"; };
@@ -85,7 +85,6 @@
 		22A0BA2C20D393600022AB25 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		22A0BA3020D394220022AB25 /* OutputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputController.swift; sourceTree = "<group>"; };
 		22A0BA3220D394770022AB25 /* OutputMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputMetalView.swift; sourceTree = "<group>"; };
-		22EBE9A323209E84000A1A11 /* RGBDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RGBDLib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22EBE9A423209E84000A1A11 /* RGBDLib.framework in Frameworks */,
-				22EBE9A523209EDE000A1A11 /* RGBDLib.framework in Frameworks */,
+				22181F66234330C500874CB8 /* RGBDLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +116,7 @@
 		227571B620E482D200428441 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				227571B720E482E900428441 /* PassThrough.metal */,
+				227F83A423432DB100BB2072 /* PassThrough.metal */,
 				229BE1EC21007EBA00ED1AEB /* MeshShader.metal */,
 			);
 			path = Shaders;
@@ -189,7 +187,7 @@
 		22A0BA1C20D34EDD0022AB25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22EBE9A323209E84000A1A11 /* RGBDLib.framework */,
+				22181F64234330AC00874CB8 /* RGBDLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +202,7 @@
 				22A0B9E620D34AC40022AB25 /* Sources */,
 				22A0B9E720D34AC40022AB25 /* Frameworks */,
 				22A0B9E820D34AC40022AB25 /* Resources */,
-				22532D7A2320980E004F616B /* Embed Frameworks */,
+				227F83AD23432DDF00BB2072 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,12 +256,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = 3DLab;
 				TargetAttributes = {
 					22A0B9E920D34AC40022AB25 = {
 						CreatedOnToolsVersion = 9.4;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1100;
 						SystemCapabilities = {
 							com.apple.Sandbox = {
 								enabled = 1;
@@ -332,13 +330,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A0BA2B20D3923C0022AB25 /* InputMetalView.swift in Sources */,
-				227571B820E482E900428441 /* PassThrough.metal in Sources */,
 				222F529721FAF5B100B3B953 /* DisparityViewController.swift in Sources */,
 				22A0BA3320D394770022AB25 /* OutputMetalView.swift in Sources */,
 				22904D3C21AFC34D00CE21C0 /* SceneViewController.swift in Sources */,
 				229BE1ED21007EBA00ED1AEB /* MeshShader.metal in Sources */,
 				22A0BA2820D36A210022AB25 /* WindowController.swift in Sources */,
 				227571BE20E4D07500428441 /* SplitViewController.swift in Sources */,
+				227F83A523432DB100BB2072 /* PassThrough.metal in Sources */,
 				22A0BA2D20D393600022AB25 /* InputController.swift in Sources */,
 				222F529521FAF36700B3B953 /* DisparityMetalView.swift in Sources */,
 				22A0BA3120D394220022AB25 /* OutputController.swift in Sources */,
@@ -509,27 +507,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToolKit/ToolKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FNQ32GF8H3;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ToolKit",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Release",
 				);
 				INFOPLIST_FILE = ToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = Diego.ToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -538,27 +534,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ToolKit/ToolKit.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FNQ32GF8H3;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/ToolKit",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Release",
 				);
 				INFOPLIST_FILE = ToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/lib",
-				);
 				OTHER_LDFLAGS = "-ObjC";
 				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_BUNDLE_IDENTIFIER = Diego.ToolKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

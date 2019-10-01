@@ -31,6 +31,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                                       GTMode: params.GetGT(), evalMode: params.GetEval())
             print("OK KinFu")
         }
+        
+        ParamKFClosure = {
+            guard let params = $0 else {
+                print("no application running")
+                return
+            }
+            self.Appli = KeyFrameMapping(factor: params.GetFactor(), KFDist: params.GetKFDist(), KFAngle: params.GetKFAngle(), lvl: params.GetLvl(),
+                                            iter: [params.GetIter0(), params.GetIter1(), params.GetIter2()],
+                                            threshDist: params.GetThreshDist(), threshAngle: params.GetThreshAngle(), videoMode: params.GetVideoCapture(),
+                                            GTMode: params.GetGT(), evalMode: params.GetEval(), method: params.GetMethod())
+                                      
+            print("OK KFSLAM")
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -298,13 +311,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         paramPanel.show()
     }
     
+    /// Initialize a Keyframe-based RGB-D SLAM application
+    /// Simultaneously track camera motion, and reconstruct the 3D model with keyframes
+    ///
+    /// - Parameter sender: Any
+    /// - Note: At initialization, various parameters can be set:
+    /// Type of depth data fusion,
+    /// video capture enabled,
+    /// Ground truth camera trajectory used,
+    /// evaluation mode,
+    /// ICP parameters
     @IBAction func KFMap(_ sender: Any) {
         if Appli != nil {
             Appli!.Stop()
         }
         
-        Appli = KeyFrameMapping(height: 512, width: 512)
-        print("OK KFMap")
+        //Create user interface to set the parameters
+        let paramPanel = ParamKF()
+        paramPanel.show()
+        
+        //Appli = KeyFrameMapping(height: 512, width: 512)
+        //print("OK KFMap")
     }
         
     @IBAction func DynFu(_ sender: Any) {

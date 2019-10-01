@@ -173,27 +173,32 @@ class InputController: NSViewController, MenuDelegate {
         
         // Load Camera
         if (Camera == nil) {
-            let appDelegate = NSApplication.shared.delegate as! AppDelegate
-            guard let camera = appDelegate.Camera as RGBDCamera? else {
-                print("no camera set")
-                return
+            DispatchQueue.main.sync {
+                let appDelegate = NSApplication.shared.delegate as! AppDelegate
+                guard let camera = appDelegate.Camera as RGBDCamera? else {
+                    print("no camera set")
+                    return
+                }
+                self.Camera = camera
+                    
+                
+                self.Camera?.startRecording()
             }
-            Camera = camera
-            
-            Camera?.startRecording()
             //print ("set up intrinsics")
             //SetUpClosure(Camera)
         }
         
         // Load Application
         if (Appli == nil) {
-            let appDelegate = NSApplication.shared.delegate as! AppDelegate
-            guard let appli = appDelegate.Appli as? ApplicationRGBD? else {
-                print("no camera set")
-                return
+            DispatchQueue.main.sync {
+                let appDelegate = NSApplication.shared.delegate as! AppDelegate
+                guard let appli = appDelegate.Appli as? ApplicationRGBD else {
+                    print("no appli set")
+                    return
+                }
+                self.Appli = appli
+                self.Appli!.Reset()
             }
-            Appli = appli
-            Appli!.Reset()
         }
         
         UpdateClosure(Appli)
@@ -261,7 +266,7 @@ class InputController: NSViewController, MenuDelegate {
         Camera!.reset()
         
         // Comparative evaluation
-        if let cam = Camera! as? ICLCamera,
+        /*if let cam = Camera! as? ICLCamera,
             let KeyFrameMapper = Appli! as? KeyFrameMapping {
             KeyFrameMapper.EvaluateKF(cam)
         }
@@ -269,7 +274,7 @@ class InputController: NSViewController, MenuDelegate {
         if let cam = Camera! as? ICLCamera,
             var KinFu = Appli! as? KinectFusion {
             KinFu.EvaluateKF(cam)
-        }
+        }*/
         
         // Reset the application
         /*guard var appli = Appli as? ApplicationRGBD? else {
