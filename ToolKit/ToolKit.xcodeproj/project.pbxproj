@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22181F66234330C500874CB8 /* RGBDLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22181F64234330AC00874CB8 /* RGBDLib.framework */; };
-		22181F67234330C500874CB8 /* RGBDLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22181F64234330AC00874CB8 /* RGBDLib.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		22181F6B2343323000874CB8 /* PassThrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = 22181F6A2343322F00874CB8 /* PassThrough.metal */; };
 		222F529521FAF36700B3B953 /* DisparityMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F529421FAF36700B3B953 /* DisparityMetalView.swift */; };
 		222F529721FAF5B100B3B953 /* DisparityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222F529621FAF5B100B3B953 /* DisparityViewController.swift */; };
 		227571BE20E4D07500428441 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 227571BD20E4D07500428441 /* SplitViewController.swift */; };
-		227F83A523432DB100BB2072 /* PassThrough.metal in Sources */ = {isa = PBXBuildFile; fileRef = 227F83A423432DB100BB2072 /* PassThrough.metal */; };
 		22904D3421AF8DBB00CE21C0 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D3321AF8DBB00CE21C0 /* ARViewController.swift */; };
 		22904D3C21AFC34D00CE21C0 /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22904D3B21AFC34D00CE21C0 /* SceneViewController.swift */; };
 		229BE1ED21007EBA00ED1AEB /* MeshShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 229BE1EC21007EBA00ED1AEB /* MeshShader.metal */; };
@@ -26,9 +24,32 @@
 		22A0BA2D20D393600022AB25 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0BA2C20D393600022AB25 /* InputController.swift */; };
 		22A0BA3120D394220022AB25 /* OutputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0BA3020D394220022AB25 /* OutputController.swift */; };
 		22A0BA3320D394770022AB25 /* OutputMetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0BA3220D394770022AB25 /* OutputMetalView.swift */; };
+		22A629D72346F2AC00468D62 /* RGBDLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A629D52346F2A600468D62 /* RGBDLib.framework */; };
+		22A629D82346F2AC00468D62 /* RGBDLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22A629D52346F2A600468D62 /* RGBDLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		225424852164B52C00BA2C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225424802164B52C00BA2C0C /* RGBDLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22B173E520D23D7700A4121B;
+			remoteInfo = RGBDLib;
+		};
+		225424872164B52C00BA2C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225424802164B52C00BA2C0C /* RGBDLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 22B173EE20D23D7700A4121B;
+			remoteInfo = RGBDLibTests;
+		};
+		225424902164B6F800BA2C0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 225424802164B52C00BA2C0C /* RGBDLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 22B173E420D23D7700A4121B;
+			remoteInfo = RGBDLib;
+		};
 		22A0B9FD20D34AC60022AB25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 22A0B9E220D34AC40022AB25 /* Project object */;
@@ -46,13 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		227F83AD23432DDF00BB2072 /* Embed Frameworks */ = {
+		22A629D92346F2AC00468D62 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				22181F67234330C500874CB8 /* RGBDLib.framework in Embed Frameworks */,
+				22A629D82346F2AC00468D62 /* RGBDLib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,11 +81,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		22181F64234330AC00874CB8 /* RGBDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RGBDLib.framework; sourceTree = "<group>"; };
+		22181F6A2343322F00874CB8 /* PassThrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PassThrough.metal; sourceTree = "<group>"; };
 		222F529421FAF36700B3B953 /* DisparityMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisparityMetalView.swift; sourceTree = "<group>"; };
 		222F529621FAF5B100B3B953 /* DisparityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisparityViewController.swift; sourceTree = "<group>"; };
+		225424802164B52C00BA2C0C /* RGBDLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RGBDLib.xcodeproj; path = ../RGBDLib/RGBDLib.xcodeproj; sourceTree = "<group>"; };
 		227571BD20E4D07500428441 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
-		227F83A423432DB100BB2072 /* PassThrough.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = PassThrough.metal; sourceTree = "<group>"; };
 		22904D3321AF8DBB00CE21C0 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		22904D3B21AFC34D00CE21C0 /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
 		229BE1EC21007EBA00ED1AEB /* MeshShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = MeshShader.metal; sourceTree = "<group>"; };
@@ -85,6 +106,7 @@
 		22A0BA2C20D393600022AB25 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
 		22A0BA3020D394220022AB25 /* OutputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputController.swift; sourceTree = "<group>"; };
 		22A0BA3220D394770022AB25 /* OutputMetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputMetalView.swift; sourceTree = "<group>"; };
+		22A629D52346F2A600468D62 /* RGBDLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RGBDLib.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22181F66234330C500874CB8 /* RGBDLib.framework in Frameworks */,
+				22A629D72346F2AC00468D62 /* RGBDLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,10 +135,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		225424812164B52C00BA2C0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				225424862164B52C00BA2C0C /* RGBDLib.framework */,
+				225424882164B52C00BA2C0C /* RGBDLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		227571B620E482D200428441 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
-				227F83A423432DB100BB2072 /* PassThrough.metal */,
+				22181F6A2343322F00874CB8 /* PassThrough.metal */,
 				229BE1EC21007EBA00ED1AEB /* MeshShader.metal */,
 			);
 			path = Shaders;
@@ -125,6 +156,7 @@
 		22A0B9E120D34AC40022AB25 = {
 			isa = PBXGroup;
 			children = (
+				225424802164B52C00BA2C0C /* RGBDLib.xcodeproj */,
 				22A0B9EC20D34AC40022AB25 /* ToolKit */,
 				22A0B9FF20D34AC60022AB25 /* ToolKitTests */,
 				22A0BA0A20D34AC60022AB25 /* ToolKitUITests */,
@@ -187,7 +219,7 @@
 		22A0BA1C20D34EDD0022AB25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22181F64234330AC00874CB8 /* RGBDLib.framework */,
+				22A629D52346F2A600468D62 /* RGBDLib.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -202,11 +234,12 @@
 				22A0B9E620D34AC40022AB25 /* Sources */,
 				22A0B9E720D34AC40022AB25 /* Frameworks */,
 				22A0B9E820D34AC40022AB25 /* Resources */,
-				227F83AD23432DDF00BB2072 /* Embed Frameworks */,
+				22A629D92346F2AC00468D62 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				225424912164B6F800BA2C0C /* PBXTargetDependency */,
 			);
 			name = ToolKit;
 			productName = ToolKit;
@@ -289,6 +322,12 @@
 			mainGroup = 22A0B9E120D34AC40022AB25;
 			productRefGroup = 22A0B9EB20D34AC40022AB25 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 225424812164B52C00BA2C0C /* Products */;
+					ProjectRef = 225424802164B52C00BA2C0C /* RGBDLib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				22A0B9E920D34AC40022AB25 /* ToolKit */,
@@ -297,6 +336,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		225424862164B52C00BA2C0C /* RGBDLib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RGBDLib.framework;
+			remoteRef = 225424852164B52C00BA2C0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		225424882164B52C00BA2C0C /* RGBDLibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RGBDLibTests.xctest;
+			remoteRef = 225424872164B52C00BA2C0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		22A0B9E820D34AC40022AB25 /* Resources */ = {
@@ -336,7 +392,7 @@
 				229BE1ED21007EBA00ED1AEB /* MeshShader.metal in Sources */,
 				22A0BA2820D36A210022AB25 /* WindowController.swift in Sources */,
 				227571BE20E4D07500428441 /* SplitViewController.swift in Sources */,
-				227F83A523432DB100BB2072 /* PassThrough.metal in Sources */,
+				22181F6B2343323000874CB8 /* PassThrough.metal in Sources */,
 				22A0BA2D20D393600022AB25 /* InputController.swift in Sources */,
 				222F529521FAF36700B3B953 /* DisparityMetalView.swift in Sources */,
 				22A0BA3120D394220022AB25 /* OutputController.swift in Sources */,
@@ -364,6 +420,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		225424912164B6F800BA2C0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RGBDLib;
+			targetProxy = 225424902164B6F800BA2C0C /* PBXContainerItemProxy */;
+		};
 		22A0B9FE20D34AC60022AB25 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 22A0B9E920D34AC40022AB25 /* ToolKit */;
@@ -510,13 +571,9 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FNQ32GF8H3;
 				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/ToolKit",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -537,12 +594,8 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = FNQ32GF8H3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/ToolKit",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = ToolKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
